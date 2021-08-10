@@ -49,7 +49,6 @@ namespace CSharpApp
                 Random rand = new Random(); //random selection
                 int index = rand.Next(tacotoppings.Length); //randomizer one
                 int index2 = rand.Next(tacotoppings.Length); //randomizer two
-                int taco index==index2;
                 if (answer == "Y" || answer == "y")
                 {
                     Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}");
