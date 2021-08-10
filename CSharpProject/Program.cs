@@ -51,17 +51,20 @@ namespace CSharpApp
                 int index2 = rand.Next(tacotoppings.Length); //randomizer two
                 if (answer == "Y" || answer == "y")
                 {
-                    Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}");
+                   if (tacotoppings[index]==tacotoppings[index2])
+                    {
+                        Console.WriteLine($"Your taco contains: \n Double {tacotoppings[index]}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}");
+                    }
                 }
                 else if (answer == "N" || answer =="n")
                 {
                     Console.WriteLine("Sorry sir, the only taco available is the special taco.");//If you get the same topping you get "double"
                     Tacotopping();
                 }
-                //else if (index == index2)
-                //{
-                   //Console.WriteLine($"Your taco contains: \n Double {tacotoppings[index]}");
-                //} WIP Feature not working 100%
                 else
                 {
                     Console.WriteLine("Please type Y or N!");
