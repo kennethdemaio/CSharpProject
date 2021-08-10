@@ -6,14 +6,14 @@ namespace CSharpApp
         static void Main(string[] args)
         {
             {
-                Question();
-                YesNo();
-                Tacotopping();
+                Question(); // Name method
+                YesNo(); // Day method
+                Tacotopping(); // Taco WIP continuation
             }
 
             static string Question()
             {
-                Console.WriteLine("Hello sir what's your name?");
+                Console.WriteLine("Hello sir what's your name?"); 
                 string name = Console.ReadLine();
                 Console.WriteLine("Your name is " + name + "? That's my cousins name!!(Hit Enter once)");
                 return Console.ReadLine();
@@ -34,7 +34,7 @@ namespace CSharpApp
                     }
                     else
                     {
-                        Console.WriteLine("Please type Y or N!");
+                        Console.WriteLine("Please type Y or N!"); // loops if invalid input
                         YesNo();
                     }
                 }
@@ -53,24 +53,24 @@ namespace CSharpApp
                 {
                    if (tacotoppings[index]==tacotoppings[index2])
                     {
-                        Console.WriteLine($"Your taco contains: \n Double {tacotoppings[index]}");
+                        Console.WriteLine($"Your taco contains: \n Double {tacotoppings[index]}"); //If you get the same topping you get "double" (comparing strings)
                     }
                     else
                     {
-                        Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}");
+                        Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}"); // Normal functional
                     }
                 }
-                else if (answer == "N" || answer =="n")
+                else if (answer == "N" || answer =="n") // if they say no loop (temp until I add more features
                 {
-                    Console.WriteLine("Sorry sir, the only taco available is the special taco.");//If you get the same topping you get "double"
+                    Console.WriteLine("Sorry sir, the only taco available is the special taco.");
                     Tacotopping();
                 }
                 else
                 {
                     Console.WriteLine("Please type Y or N!");
-                    Tacotopping();
+                    Tacotopping(); // loops if no
                 }
-                return Console.ReadLine();
+                return Console.ReadLine(); // makes it so the console is used.
             }
         }
     }
