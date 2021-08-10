@@ -6,10 +6,18 @@ namespace CSharpApp
         static void Main(string[] args)
         {
             {
+                Question();
+                YesNo();
+
+
+
+            }
+            static string Question()
+            {
                 Console.WriteLine("What is your name?");
                 string name = Console.ReadLine();
-                Console.WriteLine("Your name is " + name + "? So is mine!");
-                YesNo();
+                Console.WriteLine("Your name is " + name + "? So is mine!(Hit Enter once)");
+                return Console.ReadLine();
             }
             static void YesNo()
             {
@@ -35,6 +43,5 @@ namespace CSharpApp
         }
     }
 }
-
 
 
