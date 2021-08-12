@@ -14,7 +14,7 @@ namespace CSharpApp
 
             static string Question() // Question Method 
             {
-                Console.WriteLine("Hello sir what's your name?"); 
+                Console.WriteLine("Hello sir what's your name?");
                 string name = Console.ReadLine();
                 Console.WriteLine("Your name is " + name + "? That's my cousins name!!(Hit Enter once)");
                 return Console.ReadLine();
@@ -25,7 +25,7 @@ namespace CSharpApp
                 {
                     Console.WriteLine("Was your day Good or Bad? Y/N");
                     string day = Console.ReadLine();
-                    if (day == "Y" || day =="y") // || or
+                    if (day == "Y" || day == "y") // || or
                     {
                         Console.WriteLine("That's good to hear!");
                     }
@@ -52,7 +52,7 @@ namespace CSharpApp
                 int index2 = rand.Next(tacotoppings.Length); //randomizer two
                 if (answer == "Y" || answer == "y")
                 {
-                   if (tacotoppings[index]==tacotoppings[index2])
+                    if (tacotoppings[index] == tacotoppings[index2])
                     {
                         Console.WriteLine($"Your taco contains: \n Double {tacotoppings[index]}"); //If you get the same topping you get "double" (comparing strings)
                     }
@@ -61,7 +61,7 @@ namespace CSharpApp
                         Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}"); // Normal functional
                     }
                 }
-                else if (answer == "N" || answer =="n") // loops if invalid input
+                else if (answer == "N" || answer == "n") // loops if invalid input
                 {
                     Console.WriteLine("Sorry sir, the only taco available is the special taco.");
                     Tacotopping();
@@ -80,5 +80,3 @@ namespace CSharpApp
         }
     }
 }
-
-
