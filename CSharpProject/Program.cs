@@ -3,7 +3,7 @@ namespace CSharpApp
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(string[] args) // Main method
         {
             {
                 Question(); // Name method
@@ -11,7 +11,7 @@ namespace CSharpApp
                 Tacotopping(); // Taco WIP continuation
             }
 
-            static string Question()
+            static string Question() // Question Method 
             {
                 Console.WriteLine("Hello sir what's your name?"); 
                 string name = Console.ReadLine();
@@ -19,16 +19,16 @@ namespace CSharpApp
                 return Console.ReadLine();
             }
 
-            static void YesNo()
+            static void YesNo() //YesNo method
             {
                 {
                     Console.WriteLine("Was your day Good or Bad? Y/N");
                     string day = Console.ReadLine();
-                    if (day == "Y" || day =="y")
+                    if (day == "Y" || day =="y") // || or
                     {
                         Console.WriteLine("That's good to hear!");
                     }
-                    else if (day == "N" || day == "n")
+                    else if (day == "N" || day == "n")// || or
                     {
                         Console.WriteLine("That's not good to hear!");
                     }
@@ -60,7 +60,7 @@ namespace CSharpApp
                         Console.WriteLine($"Your taco contains: \n{tacotoppings[index]}\n{tacotoppings[index2]}"); // Normal functional
                     }
                 }
-                else if (answer == "N" || answer =="n") // if they say no loop (temp until I add more features
+                else if (answer == "N" || answer =="n") // loops if invalid input
                 {
                     Console.WriteLine("Sorry sir, the only taco available is the special taco.");
                     Tacotopping();
