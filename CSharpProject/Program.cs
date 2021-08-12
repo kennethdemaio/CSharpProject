@@ -9,6 +9,7 @@ namespace CSharpApp
                 Question(); // Name method
                 YesNo(); // Day method
                 Tacotopping(); // Taco WIP continuation
+                Satisfied(); // Customer Satisfaction
             }
 
             static string Question() // Question Method 
@@ -44,8 +45,8 @@ namespace CSharpApp
             {
                 Console.WriteLine("Hello this is taco bell drive through. We currently have a special to make a random taco, would you like this? Y/N:");
                 string answer = Console.ReadLine(); //reading the console input 
-                //string[] tacotoppings = { "Meat", "Salsa", "Beans", "Sour cream", "Guacamole", "Tomatoes", "Lettuce" }; //my array of taco toppings
-                string[] tacotoppings = {"Lettuce", "Lettuce", "Lettuce", "Lettuce", "Lettuce", "Lettuce" };
+                string[] tacotoppings = { "Meat", "Salsa", "Beans", "Sour cream", "Guacamole", "Tomatoes", "Lettuce" }; //my array of taco toppings
+                //string[] tacotoppings = {"Lettuce", "Lettuce", "Lettuce", "Lettuce", "Lettuce", "Lettuce" }; // Was to test double toppings feature
                 Random rand = new Random(); //random selection
                 int index = rand.Next(tacotoppings.Length); //randomizer one
                 int index2 = rand.Next(tacotoppings.Length); //randomizer two
@@ -71,6 +72,10 @@ namespace CSharpApp
                     Tacotopping(); // loops if no
                 }
                 return Console.ReadLine(); // makes it so the console is used.
+            }
+            static void Satisfied()
+            {
+                Console.WriteLine("We hope you had a great experience with us! If you check your receipt you can get 25% off your order with us! Shop safely!");
             }
         }
     }
