@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 namespace CSharpApp
 {
     class Program
@@ -10,6 +11,7 @@ namespace CSharpApp
                 YesNo(); // Day method
                 Tacotopping(); // Taco WIP continuation
                 Satisfied(); // Customer Satisfaction
+                NewMethod();
             }
 
             static string Question() // Question Method 
@@ -21,7 +23,7 @@ namespace CSharpApp
             }
 
             static void YesNo() //YesNo method
-            {
+            { 
                 {
                     Console.WriteLine("Was your day Good or Bad? Y/N");
                     string day = Console.ReadLine();
@@ -76,6 +78,13 @@ namespace CSharpApp
             static void Satisfied()
             {
                 Console.WriteLine("We hope you had a great experience with us! If you check your receipt you can get 25% off your order with us! Shop safely!");
+            }
+            static void NewMethod() // Method Delay test (this is ALPHA feature trying to make it seem like console is talking, in progress
+            {
+                int ms = 5000;
+                Thread.Sleep(ms);
+                Console.WriteLine("Test");
+                Console.ReadLine();
             }
         }
     }
