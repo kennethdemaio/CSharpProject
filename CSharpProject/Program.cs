@@ -81,10 +81,10 @@ namespace CSharpApp
             }
             static void NewMethod() // Method Delay test (this is ALPHA feature trying to make it seem like console is talking, in progress
             {
-                int ms = 5000;
+                int ms = 5000; // delay in ms
                 Thread.Sleep(ms);
-                Console.WriteLine("Test");
-                Console.ReadLine();
+                Console.WriteLine("Test"); // What prints per delay
+                Console.ReadLine(); // to pause after, temp
             }
         }
     }
