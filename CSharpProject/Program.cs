@@ -23,7 +23,7 @@ namespace CSharpApp
             }
 
             static void YesNo() //YesNo method
-            { 
+            {
                 {
                     Console.WriteLine("Was your day Good or Bad? Y/N");
                     string day = Console.ReadLine();
